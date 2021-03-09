@@ -85,6 +85,7 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 
 
 ๏**ส่วนสุดท้าย** ในส่วนนี้จะเป็นการกำหนด Buad Rate และ Serial communication
+
 [![Capture5.png](https://i.postimg.cc/sgTJWXcQ/Capture5.png)](https://postimg.cc/0zJmR9hP)
 
 	- บรรทัดที่ 23 กำหนด Buad Rate
