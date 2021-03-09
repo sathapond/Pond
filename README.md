@@ -45,7 +45,7 @@ Built-in | RTC, Relay, Buzzer
 3.	ทำการเปิดไฟล์ .csv* เลือกไฟล์ Config ตามความต้องการ โดยในที่นี่เราจะยกตัวอย่างการใช้งานทั้ง 3 รูปแบบ คือ Modbus, Analog และ Digital
 
 
-3.1 Config Modbus
+**Config Modbus**
 เปิดไฟล์ MODBUS.csv เมื่อเปิดไฟล์เราจะพบหน้าต่าง Config ของการอ่าน Modbus
 [![md.png](https://i.postimg.cc/vZ8VY5Z8/md.png)](https://postimg.cc/jL95vwfB) 
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
@@ -99,7 +99,7 @@ https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 
 6.หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ MODBUS.csv
 
-3.2 Config Analog
+**Config Analog**
 เปิดไฟล์ ANALOG.csv เมื่อเปิดไฟล์เราจะพบหน้าต่าง Config ของการอ่านค่า Analog
 [![analoh.png](https://i.postimg.cc/kX7HCMLN/analoh.png)](https://postimg.cc/MXr5bw6X)
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
