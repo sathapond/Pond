@@ -193,6 +193,7 @@ https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 
 ๏**ส่วนสุดท้าย** ในส่วนนี้จะเป็นการกำหนดเงื่อนไขของการใช้งานค่าเวลาซึ่ง
 เราจะสามารถนำส่วนของการ **Config Time** มาใช้ในเงื่อนไขได้ด้วย ส่วนของ Output Condition นั้นจะมีรายละเอียดดังนี้
+
 [![9.png](https://i.postimg.cc/zfxK0WRP/9.png)](https://postimg.cc/McjnGn5y)
 
 	- บรรทัดที่ 89 เป็นส่วนของ header ตารางซึ่งจะระบุตาม Colum ดังนี้
