@@ -35,6 +35,9 @@ Reset Button | 1
 LED Indicator | 1
 Built-in | RTC, Relay, Buzzer
 
+
+----------
+
 ###**Usability**
 ขั้นตอนการใช้งาน
 1.	ถอด Micro SD Card ที่ติดอยู่กับตัวอุปกรณ์ออกมา
@@ -48,7 +51,7 @@ Built-in | RTC, Relay, Buzzer
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
 
 การ **Config Modbus** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
- ส่วนของ Header ประกอบไปด้วย
+๏ส่วนของ Header ประกอบไปด้วย
  [![Capture.png](https://i.postimg.cc/c6qSJG36/Capture.png)](https://postimg.cc/8fb3y3tV)
 
 	- บรรทัดที่ 1 สั่ง On หรือ Off พอร์ตการสื่อสาร RS485
@@ -61,9 +64,44 @@ Built-in | RTC, Relay, Buzzer
 (0 = OFF, 1 = ON) ฟังก์ชั่นนี้ทำให้มาสเตอร์สามารถอ่านค่าอินพุตแบบดิสครีต (Discrete Input) หรือดิจิตอลอินพุตในอุปกรณ์สแลฟ ฟิลด์ข้อมูลของเฟรมร้องขอจะประกอบด้วยหมายเลขแอดเดรสของอินพุตแรกตามด้วยจำนวนดิจิตอลอินพุตที่ต้องการอ่าน 
 > - FC 03 สำหรับ read Holding register แสดงค่าของ Analog Output ฟังก์ชั่นนี้ทำให้มาสเตอร์สามารถดึงค่าในรีจิสเตอร์ของสแลฟได้ โดยทั่วไปคือค่าเซตติ้งหรือพารามิเตอร์ของอุปกรณ์นั้น ๆ
 > - FC 04 สำหรับการ read Input register แสดงค่าของ Analog Input ฟังก์ชั่นนี้อนุญาตให้มาสเตอร์ สามารถอ่านค่าอินพุตรีจิสเตอร์จากหลาย ๆ รีจิสเตอร์ในอุปกรณ์สแลฟ โดยทั่วไปอินพุตรีจิสเตอร์จะมีไว้เก็บค่าวัดอะนาลอก
-
 **อ่านข้อมูลเพิ่มเติมได้ที่**
 http://www.wisco.co.th/main/articles/Modbus
 http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 
 	- บรรทัดที่ 4 Address ของอุปกรณ์ Slave แต่ละตัวที่ได้รับการกำหนดอยู่ Address ในช่วง 1–247 เมื่อ Slave มีส่งการตอบสนองของมัน Address ของตัวมันเองจะอยู่ในขอบเขต Address Field ของการตอบสนองเพื่อให้อุปกรณ์ Master ทราบว่าอุปกรณ์ Slave กำลังตอบสนองอยู่
+
+๏**ส่วนที่สอง** นั้นจะเป็นส่วนของ Operator ในส่วนนี้เราจะทำการระบุ Register Address ของอุปกรณ์เพื่ออ่านค่าต่างๆ และสามารถใช้งาน Operator ในการ บวก ลบ คูณ หรือ หาร ค่าที่อ่านมาได้
+[![Capture2.png](https://i.postimg.cc/GtcPrQjJ/Capture2.png)](https://postimg.cc/jwFn4ymL)
+
+	- บรรทัดที่ 8-17 ใช้ระบุ Register Address ที่ต้องการอ่านค่า สามารถอ่านค่าแอดเดรสได้สูงสุด 10 ค่า แต่ถ้าหากต้องการอ่านเพียงค่าเดียว ให้กำหนด none ในแต่ละบรรทัด 
+
+ในที่นี่จะยกตัวอย่าง Register Address ของ AW5485 เป็นเซนเซอร์วัดอุณหภูมิและความชื้น
+[![Capture3.png](https://i.postimg.cc/7LZfxRvL/Capture3.png)](https://postimg.cc/RW2MdXZr)
+
+โดยจะระบุค่า 0x0005 เพื่อทำการอ่านค่า Temperature และใช้งาน Operator ซึ่งจะใช้การกำหนด / เพื่อหารค่า แล้วทำการกำหนดค่า 100 ดังนั้นค่าที่ได้จากการอ่านจะหารด้วย 100  และทำการใส่ none ในบรรทัดอื่นที่ไม่ได้ใช้งาน
+[![Capture4.png](https://i.postimg.cc/TYr7KfFg/Capture4.png)](https://postimg.cc/CzxHtTFx)
+
+๏**ส่วนสุดท้าย** ในส่วนนี้จะเป็นการกำหนด Buad Rate และ Serial communication
+[![Capture5.png](https://i.postimg.cc/sgTJWXcQ/Capture5.png)](https://postimg.cc/0zJmR9hP)
+
+	- บรรทัดที่ 23 กำหนด Buad Rate
+	- บรรทัดที่ 24 เลือกกำหนด Serial Protocol ซึ่งเราจะมีให้เรียกใช้งาน 12 รูปแบบ
+**อ่านข้อมูลเพิ่มเติมได้ที่**
+https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
+
+4.หลังจากที่กำหนดค่า Config เสร็จแล้วให้ทำการกด Save ไฟล์ โดยการกด Ctrl+S 
+
+5.เมื่อเสร็จแล้วให้นำ Micro SD Card กลับเข้าไปเสียบเข้ากับตัวอุปกรณ์
+
+6.หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ MODBUS.csv
+
+3.2 Config Analog
+เปิดไฟล์ ANALOG.csv เมื่อเปิดไฟล์เราจะพบหน้าต่าง Config ของการอ่านค่า Analog
+[![analoh.png](https://i.postimg.cc/kX7HCMLN/analoh.png)](https://postimg.cc/MXr5bw6X)
+หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
+
+หลังจากที่กำหนดค่า Config เสร็จแล้วให้ทำการกด Save ไฟล์
+
+เมื่อเสร็จแล้วให้นำ Micro SD Card กลับเข้าไปเสียบเข้ากับตัวอุปกรณ์
+
+หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ ANALOG.csv
