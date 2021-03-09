@@ -76,6 +76,7 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 ๏**ส่วนที่สอง** นั้นจะเป็นส่วนของ Operator ในส่วนนี้เราจะทำการระบุ Register Address ของอุปกรณ์เพื่ออ่านค่าต่างๆ และสามารถใช้งาน Operator ในการ บวก ลบ คูณ หรือ หาร ค่าที่อ่านมาได้ แล้วยังสามารถตั้งชื่อให้กับค่า Address ที่อ่านมาได้โดยใส่ใน Colum ของ Name
 
 [![Capture2.png](https://i.postimg.cc/GtcPrQjJ/Capture2.png)](https://postimg.cc/jwFn4ymL)
+
 	- บรรทัดที่ 7 เป็นส่วนของ header ตารางซึ่งจะระบุตาม Colum ดังนี้
 		  คอลัมน์ A คือ ส่วนของการกำหนด Register Address ของอุปกรณ์
 		  คอลัมน์ B คือ ส่วนของ Operator  ที่จะใช้ในการ บวก(+) ลบ(-) คูณ(*) และ 
