@@ -52,7 +52,8 @@ Built-in | RTC, Relay, Buzzer
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
 
 การ **Config Modbus** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
-๏ส่วนของ Header ประกอบไปด้วย
+
+๏ส่วนแรก คือ Header ประกอบไปด้วย
 
  [![Capture.png](https://i.postimg.cc/c6qSJG36/Capture.png)](https://postimg.cc/8fb3y3tV)
 
@@ -119,6 +120,7 @@ https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
 
 การ **Config Analog** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
+
 ๏**ส่วนแรก** ประกอบไปด้วย
 
 [![Capture6.png](https://i.postimg.cc/rF47DHXy/Capture6.png)](https://postimg.cc/CzFctmx9)
@@ -147,6 +149,7 @@ https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
 
 การ **Config Digital I/O** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
+
 ๏**ส่วนแรก** ประกอบไปด้วย
 
 [![2.png](https://i.postimg.cc/kMf6z7Tz/2.png)](https://postimg.cc/V50kbPQW)
