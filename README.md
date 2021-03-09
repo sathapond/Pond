@@ -93,11 +93,11 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 **อ่านข้อมูลเพิ่มเติมได้ที่**
 https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 
-4.หลังจากที่กำหนดค่า Config เสร็จแล้วให้ทำการกด Save ไฟล์ โดยการกด Ctrl+S 
+4.	หลังจากที่กำหนดค่า Config เสร็จแล้วให้ทำการกด Save ไฟล์ โดยการกด Ctrl+S 
 
-5.เมื่อเสร็จแล้วให้นำ Micro SD Card กลับเข้าไปเสียบเข้ากับตัวอุปกรณ์
+5.	เมื่อเสร็จแล้วให้นำ Micro SD Card กลับเข้าไปเสียบเข้ากับตัวอุปกรณ์
 
-6.หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ MODBUS.csv
+6.	หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ MODBUS.csv
 
 
 ----------
