@@ -79,7 +79,9 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 [![Capture3.png](https://i.postimg.cc/7LZfxRvL/Capture3.png)](https://postimg.cc/RW2MdXZr)
 
 โดยจะระบุค่า 0x0005 เพื่อทำการอ่านค่า Temperature และใช้งาน Operator ซึ่งจะใช้การกำหนด / เพื่อหารค่า แล้วทำการกำหนดค่า 100 ดังนั้นค่าที่ได้จากการอ่านจะหารด้วย 100  และทำการใส่ none ในบรรทัดอื่นที่ไม่ได้ใช้งาน
+
 [![Capture4.png](https://i.postimg.cc/TYr7KfFg/Capture4.png)](https://postimg.cc/CzxHtTFx)
+
 
 ๏**ส่วนสุดท้าย** ในส่วนนี้จะเป็นการกำหนด Buad Rate และ Serial communication
 [![Capture5.png](https://i.postimg.cc/sgTJWXcQ/Capture5.png)](https://postimg.cc/0zJmR9hP)
