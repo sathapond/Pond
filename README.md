@@ -53,10 +53,11 @@ Built-in | RTC, Relay, Buzzer
 
 การ **Config Modbus** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
 ๏ส่วนของ Header ประกอบไปด้วย
+
  [![Capture.png](https://i.postimg.cc/c6qSJG36/Capture.png)](https://postimg.cc/8fb3y3tV)
 
-	- บรรทัดที่ 1 สั่ง On หรือ Off พอร์ตการสื่อสาร RS485
-	- บรรทัดที่ 2 สั่ง On หรือ Off การส่งค่าไปแสดงผลบน Magellan Platform
+	- บรรทัดที่ 1 สั่ง on หรือ off พอร์ตการสื่อสาร RS485
+	- บรรทัดที่ 2 สั่ง on หรือ off การส่งค่าไปแสดงผลบน Magellan Platform
 	- บรรทัดที่ 3 ในส่วนนี้แต่ละเฟรมร้องขอจะบรรจุหมายเลขฟังก์ชั่นที่นิยามลักษณะการทำงานที่ถูกต้องการให้สแลฟดำเนินการ ความหมายของฟิลด์ข้อมูลขึ้นอยู่กับหมายเลขหรือชนิดฟังก์ชั่นที่ใช้ การร้องขอในบางครั้งอาจเรียกอีกอย่างว่า คิวรี (Query) ซึ่งเป็นศัพท์ทางเทคนิคที่ใช้กันมากในระบบฐานข้อมูล
 
 > - FC 01 สำหรับ read Coil แสดงสถานะของ Digital Output
@@ -71,7 +72,7 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 
 	- บรรทัดที่ 4 Address ของอุปกรณ์ Slave แต่ละตัวที่ได้รับการกำหนดอยู่ Address ในช่วง 1–247 เมื่อ Slave มีส่งการตอบสนองของมัน Address ของตัวมันเองจะอยู่ในขอบเขต Address Field ของการตอบสนองเพื่อให้อุปกรณ์ Master ทราบว่าอุปกรณ์ Slave กำลังตอบสนองอยู่
 
-๏**ส่วนที่สอง** นั้นจะเป็นส่วนของ Operator ในส่วนนี้เราจะทำการระบุ Register Address ของอุปกรณ์เพื่ออ่านค่าต่างๆ และสามารถใช้งาน Operator ในการ บวก ลบ คูณ หรือ หาร ค่าที่อ่านมาได้
+๏**ส่วนที่สอง** นั้นจะเป็นส่วนของ Operator ในส่วนนี้เราจะทำการระบุ Register Address ของอุปกรณ์เพื่ออ่านค่าต่างๆ และสามารถใช้งาน Operator ในการ บวก ลบ คูณ หรือ หาร ค่าที่อ่านมาได้ แล้วยังสามารถตั้งชื่อให้กับค่า Address ที่อ่านมาได้โดยใส่ใน Colum ของ Name
 
 [![Capture2.png](https://i.postimg.cc/GtcPrQjJ/Capture2.png)](https://postimg.cc/jwFn4ymL)
 
@@ -80,13 +81,11 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 ในที่นี่จะยกตัวอย่าง Register Address ของ AW5485 เป็นเซนเซอร์วัดอุณหภูมิและความชื้น
 [![Capture3.png](https://i.postimg.cc/7LZfxRvL/Capture3.png)](https://postimg.cc/RW2MdXZr)
 
-โดยจะระบุค่า 0x0005 เพื่อทำการอ่านค่า Temperature และใช้งาน Operator ซึ่งจะใช้การกำหนด / เพื่อหารค่า แล้วทำการกำหนดค่า 100 ดังนั้นค่าที่ได้จากการอ่านจะหารด้วย 100  และทำการใส่ none ในบรรทัดอื่นที่ไม่ได้ใช้งาน
+โดยจะระบุค่า 0x0005 เพื่อทำการอ่านค่า Temperature และใช้งาน Operator ซึ่งจะใช้การกำหนด / เพื่อหารค่า แล้วทำการกำหนดค่า 100 ดังนั้นค่าที่ได้จากการอ่านจะหารด้วย 100  หลังจากนั้นทำการใส่ชื่อโดยที่นี่จะใส่คำว่า Temp และทำการใส่ none ในบรรทัดอื่นที่ไม่ได้ใช้งาน
 
-[![Capture4.png](https://i.postimg.cc/TYr7KfFg/Capture4.png)](https://postimg.cc/CzxHtTFx)
-
+[![Captur.png](https://i.postimg.cc/XNdrQV9w/Captur.png)](https://postimg.cc/grcc0bSJ)
 
 ๏**ส่วนสุดท้าย** ในส่วนนี้จะเป็นการกำหนด Buad Rate และ Serial communication
-
 [![Capture5.png](https://i.postimg.cc/sgTJWXcQ/Capture5.png)](https://postimg.cc/0zJmR9hP)
 
 	- บรรทัดที่ 23 กำหนด Buad Rate
@@ -100,12 +99,31 @@ https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 
 6.หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ MODBUS.csv
 
+
+----------
+
+
 ###**Config Analog**
 
 เปิดไฟล์ ANALOG.csv เมื่อเปิดไฟล์เราจะพบหน้าต่าง Config ของการอ่านค่า Analog
 [![analoh.png](https://i.postimg.cc/kX7HCMLN/analoh.png)](https://postimg.cc/MXr5bw6X)
 หลังจากนั้นให้ผู้ใช้งานกำหนดค่าต่างๆที่ต้องการใช้งาน
 
+การ **Config Analog** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
+๏**ส่วนแรก** ประกอบไปด้วย
+
+[![Capture6.png](https://i.postimg.cc/rF47DHXy/Capture6.png)](https://postimg.cc/CzFctmx9)
+
+	- บรรทัดที่ 1, 6, 11, 16  สั่ง on หรือ off พอร์ตการสื่อสาร Analog
+	- บรรทัดที่ 2, 7, 12, 17  ตั้งชื่อให้กับ พอร์ตที่ใช้งาน
+	- บรรทัดที่ 3, 8, 13, 18  กำหนดค่า min 
+	- บรรทัดที่ 4, 9, 14, 19  กำหนดค่า max 
+
+๏**ส่วนสุดท้าย**
+
+[![Capture7.png](https://i.postimg.cc/nV0y8mKZ/Capture7.png)](https://postimg.cc/w3RfL7bb)
+
+	- บรรทัดที่ 21 สั่ง on หรือ off การส่งค่าไปแสดงผลบน Magellan Platform
 หลังจากที่กำหนดค่า Config เสร็จแล้วให้ทำการกด Save ไฟล์
 
 เมื่อเสร็จแล้วให้นำ Micro SD Card กลับเข้าไปเสียบเข้ากับตัวอุปกรณ์
