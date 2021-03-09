@@ -68,7 +68,7 @@ Built-in | RTC, Relay, Buzzer
 > - FC 04 สำหรับการ read Input register แสดงค่าของ Analog Input ฟังก์ชั่นนี้อนุญาตให้มาสเตอร์ สามารถอ่านค่าอินพุตรีจิสเตอร์จากหลาย ๆ รีจิสเตอร์ในอุปกรณ์สแลฟ โดยทั่วไปอินพุตรีจิสเตอร์จะมีไว้เก็บค่าวัดอะนาลอก
 
 **อ่านข้อมูลเพิ่มเติมได้ที่**
-http://www.wisco.co.th/main/articles/Modbus
+http://www.wisco.co.th/main/articles/Modbus ,
 http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 
 	- บรรทัดที่ 4 Address ของอุปกรณ์ Slave แต่ละตัวที่ได้รับการกำหนดอยู่ Address ในช่วง 1–247 เมื่อ Slave มีส่งการตอบสนองของมัน Address ของตัวมันเองจะอยู่ในขอบเขต Address Field ของการตอบสนองเพื่อให้อุปกรณ์ Master ทราบว่าอุปกรณ์ Slave กำลังตอบสนองอยู่
