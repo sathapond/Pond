@@ -71,6 +71,7 @@ http://www.thailandindustry.com/indust_newweb/articles_preview.php?cid=10995
 	- บรรทัดที่ 4 Address ของอุปกรณ์ Slave แต่ละตัวที่ได้รับการกำหนดอยู่ Address ในช่วง 1–247 เมื่อ Slave มีส่งการตอบสนองของมัน Address ของตัวมันเองจะอยู่ในขอบเขต Address Field ของการตอบสนองเพื่อให้อุปกรณ์ Master ทราบว่าอุปกรณ์ Slave กำลังตอบสนองอยู่
 
 ๏**ส่วนที่สอง** นั้นจะเป็นส่วนของ Operator ในส่วนนี้เราจะทำการระบุ Register Address ของอุปกรณ์เพื่ออ่านค่าต่างๆ และสามารถใช้งาน Operator ในการ บวก ลบ คูณ หรือ หาร ค่าที่อ่านมาได้
+
 [![Capture2.png](https://i.postimg.cc/GtcPrQjJ/Capture2.png)](https://postimg.cc/jwFn4ymL)
 
 	- บรรทัดที่ 8-17 ใช้ระบุ Register Address ที่ต้องการอ่านค่า สามารถอ่านค่าแอดเดรสได้สูงสุด 10 ค่า แต่ถ้าหากต้องการอ่านเพียงค่าเดียว ให้กำหนด none ในแต่ละบรรทัด 
