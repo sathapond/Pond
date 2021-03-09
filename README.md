@@ -53,7 +53,7 @@ Built-in | RTC, Relay, Buzzer
 
 การ **Config Modbus** นั้นจะมีส่วนสำคัญที่ต้องรู้ โดยเราจะอธิบายแต่ละส่วน ดังนี้
 
-๏ส่วนแรก คือ Header ประกอบไปด้วย
+๏**ส่วนแรก** คือ Header ประกอบไปด้วย
 
  [![Capture.png](https://i.postimg.cc/c6qSJG36/Capture.png)](https://postimg.cc/8fb3y3tV)
 
