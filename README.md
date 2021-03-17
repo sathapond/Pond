@@ -111,36 +111,6 @@ https://blog.thaieasyelec.com/espino32-ch7-how-to-use-uart/
 
 6.หลังจากนั้นให้ทำการกดปุ่ม Reset 1 ครั้งเพื่อให้อุปกรณ์ทำการอ่านค่า Config จากไฟล์ MODBUS.csv
 
-7.ทำการเปิด google chrome แล้วไปที่ https://magellan.ais.co.th/users/signin
-ทำการสมัครและล็อคอิน 
-[![11.png](https://i.postimg.cc/CLbBPQR2/11.png)](https://postimg.cc/0b2yrZdG)
-8.ไปที่หน้า Things และคลิกปุ่ม“ Register thing” หรือ“ +”
-[![S-27123714.jpg](https://i.postimg.cc/MZNFwdWx/S-27123714.jpg)](https://postimg.cc/Wtmn6mFf)
-9. กรอกแบบฟอร์ม“ Thing Name”,“ ICCID”,“ IMEI” โดย ICCID, IMEI สามารถดูได้ที่กล่อง DEVIO NB-IoT Devkit I 
-[![aa.jpg](https://i.postimg.cc/qMHxQYJt/aa.jpg)](https://postimg.cc/XXx5Ysy3)
-ICCID คือหมายเลขของ S/N
-[![dd.jpg](https://i.postimg.cc/63YxzRRq/dd.jpg)](https://postimg.cc/1nnd38v1)
-10.คลิกที่ "Things" จะพบค่า Temp ที่ส่งมา
-[![Temp-payload.jpg](https://i.postimg.cc/yx01jWVb/Temp-payload.jpg)](https://postimg.cc/q6MHMJ6s)
-11.คลิกที่ "Dashboard" ไปที่ >"+Create Dashboard" ทำการกรอกข้อมูล แล้วคลิก"Create Dashboard" จะพบหน้าต่างของ Dashboard ที่เราสร้าง
-[![Temp-payload-dashboard.jpg](https://i.postimg.cc/CKtwVb52/Temp-payload-dashboard.jpg)](https://postimg.cc/v1WJrgW7)
-12.คลิกที่ "Create Widgets"
-[![dashboard.jpg](https://i.postimg.cc/RVbsddD2/dashboard.jpg)](https://postimg.cc/6ynf5rwh)
-13.หลังจากนั้นให้เลือก widgets ตามลักษณะการใช้งาน โดยในที่นี่เราจะใช้รูปแบบ "Animation" และใช้การแสดงผลในรูปแบบ> "Circular Gauge" หลังจากนั้นคลิก "Next"
-[![create-widjet.jpg](https://i.postimg.cc/Prf92Prv/create-widjet.jpg)](https://postimg.cc/bdMmvYnq)
-14.กรอกแบบฟอร์ม "Create Widget" และทำการเลือก Thing name ให้ตรงกับที่สร้างในตอนต้น
-[![widget-data.jpg](https://i.postimg.cc/L4WL0Wmk/widget-data.jpg)](https://postimg.cc/pyDmmqhy)
-15.เลือก Sensor ให้ตรงกับตัวแปรที่ส่งมา ในที่นี่คือ "Temp" เมื่อครบแล้วทำการคลิก "Next"
-[![widget-data-sensor.jpg](https://i.postimg.cc/7Z9gXZhh/widget-data-sensor.jpg)](https://postimg.cc/ts1Z4yhG)
-16.ทำการกรอกข้อมูลให้ครบตามแบบฟอร์ม
-[![widget-option.jpg](https://i.postimg.cc/qMbJLf00/widget-option.jpg)](https://postimg.cc/GHDnL5HS)
-17.เมื่อทำตามขั้นตอนจนครบแล้วจะพบหน้าต่างแสดงผลค่า Temp ที่เราส่งมา
-[![finish-Temp-dashboard.jpg](https://i.postimg.cc/XvFn4p57/finish-Temp-dashboard.jpg)](https://postimg.cc/xk0wPjgW)
-
-ปล.รูปแบบจะแตกต่างกันไปตามการใช้งาน "Widgets" ที่เราเลือกใช้
-
-----------
-
 
 ###**Config Analog**
 
