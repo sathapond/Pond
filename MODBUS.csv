@@ -1,0 +1,36 @@
+﻿on,"<<Fill ""on"" or ""off"" to control activation RS485 port.",,,
+on,"<<Fill ""on"" or ""off"" to control activation of sending there Modbus Register values up to the Magellan. ",,,
+3,<<Fill a code of Modbus function field.,,,
+1,<<Fill a Modbus Slave ID or Slave address.,,,
+,,,,
+Fill the number of Slave register address below,,,,
+Reg address,Operator,Operate Num,Name,Magellan
+0x0000,+,10.56,AIAP,<<Register 1
+none,/,10,Voltage,<<Register 2
+none,/,100,Peak Volt,<<Register 3
+none,/,1000,none,<<Register 4
+none,+,1,none,<<Register 5
+none,+,1,none,<<Register 6
+none,-,5,none,<<Register 7
+none,-,5,none,<<Register 8
+none,*,0.1,none,<<Register 9
+none,*,0.5,none,<<Register 10
+*note:,Reg adress is Register adress to read,,,
+,"Operator is math operator to operate with Modbus values in that Register address by fill as the symbol as ""+"" to sum ""-"" to substract  ""*"" to multiple or ""/"" to divide. If to do operate nothing , Fill ""none"". ",,,
+,Operate Num is some number to operate with Operator.,,,
+,Name is the naming of Register(must to do).,,,
+,,,,
+9600,<<Fill the value of modbus communication speed as bit per second in this box.,,,
+3,<<Fill the menu number of Serial communication type that following below in this box.,,,
+,          EX.,If you want SERIAL_8N1 type choose the number 1,,
+,,If you want SERIAL_8N2 type choose the number 2,,
+,,If you want SERIAL_8E1 type choose the number 3,,
+,,If you want SERIAL_8E2 type choose the number 4,,
+,,If you want SERIAL_8O1 type choose the number 5,,
+,,If you want SERIAL_8O2 type choose the number 6,,
+,,If you want SERIAL_7N1 type choose the number 7,,
+,,If you want SERIAL_7N2 type choose the number 8,,
+,,If you want SERIAL_7E1 type choose the number 9,,
+,,If you want SERIAL_7E2 type choose the number 10,,
+,,If you want SERIAL_7O1 type choose the number 11,,
+,,If you want SERIAL_7O2 type choose the number 12,,
